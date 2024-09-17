@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html>
+<title>@tejaspatil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+    #about_me, #skills, #traning, #internships, #por,#projects, #navbar{
+        opacity: 0
+        /* display: block !important; */
+    }
+    a{
+        color: #fff !important;
+    }
+    .links{
+        color: grey !important;
+    }
+    #navbar{
+        text-align: center;
+        background-color: pink;
+        position: fixed;
+        width: 100%;
+        height: 48px;
+        z-index: 5;
+        padding-top: 15px;
+        font-size: 15px;
+        margin-top: -8px !important;
+    }
+    .centerf {
+        text-align: center;
+        width: 50%;
+    }
+    	.typewrite{
+    		color: #fff
+    	}
+
+    #particles-js,
+    #particles-2-js,
+    #particles-3-js,
+    #particles-4-js,
+    #particles-5-js {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: "black"
+    }
+    #gif {
+        margin-top: 42vh;
+        display: grid;
+        justify-content: center
+    }
+
+    footer {
+        background-color: black;
+        padding: 5% 10%;
+    }
+
+    .footerIcon {
+
+        display: inline-block;
+        padding: 5%;
+        font-size: 60px;
+    }
+
+    .footerIcon:hover {
+        text-decoration: none;
+        color: white;
+        transform: scale(1.5rem) 0.25s !important;
+
+    }
+
+    #body {
+        display: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
+        overflow-x: hidden;
+    }
+
+    a {
+        color: #777;
+
+    }
+
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('/w3images/parallax1.jpg');
+        min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("/w3images/parallax2.jpg");
+        min-height: 400px;
+    }
+
+    .bg {
+        background-image: url('starts.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("/w3images/parallax3.jpg");
+        min-height: 400px;
+    }
+
+    .rajat {
+        font-size: 170%;
+        padding-top: 10%;
+        text-align: center;
+        display: none;
+    }
+
+    .skills {
+        font-size: xx-large;
+    }
+
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+
+    .padding {
+        padding: 4%;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .image {
+        display: none !important;
+    }
+
+    .button {
+        border: solid white 1px;
+        display: none;
+        margin: 0 30% !important;
+    }
+
+    .button:hover {
+        background-color: cyan;
+        color: white;
+        transition: .25s;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+    }
+
+    .resume:hover {
+        text-decoration: none;
+    }
+
+    .resume {
+        margin-bottom: 4%;
+        display: inline-block;
+    }
+
+    .large_rajat {
+        padding-top: 10rem;
+        font-size: 3rem;
+        color: white;
+    }
+
+    .button_text {
+        display: inline-block;
+        font-size: 2rem !important;
+        color: white;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .button_text:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    #home {
+        height: 100%;
+    }
+
+    @media only screen and (max-device-width: 600px) {
+        .image {
+            display: block !important;
+            margin-top: 1.5rem;
+        }
+        #navbar{
+            margin-left: -8px !important;
+        }
+
+
+
+    #particles-js{
+    	z-index: -1;
+    }
+        body {
+            background-color: black;
+            padding: 0.5rem !important;
+        }
+
+        .small {
+            display: block;
+        }
+
+        ul {
+            font-size: 0.9rem;
+        }
+
+        .medium {
+            display: none !important;
+        }
+
+        .d-flex {
+            display: none !important;
+        }
+
+        .skills {
+            font-size: 1.5rem;
+        }
+
+        .bg {
+            background-image: none;
+            height: 20%;
+        }
+
+        .rajat {
+            display: block;
+        }
+
+        .centerf {
+            width: 100%;
+        }
+
+        .footerIcon {
+            font-size: 20px;
+        }
+
+        #home {
+            height: 70%;
+        }
+
+        .button {
+            border-radius: 25px;
+            margin: 0 30% !important;
+            background-color: cyan !important;
+        }
+
+        .button_text {
+            display: inline-block;
+            color: black;
+            font-size: 1.25rem !important;
+        }
+
+        .button_text:hover {
+            color: white;
+        }
+
+        .button:hover {
+            background-color: cyan;
+            color: white;
+            transition: .25s;
+            border-radius: 5px;
+            border: none;
+            text-decoration: none;
+        }
+
+        .large_rajat {
+            font-size: 1.25rem;
+            padding-top: 2rem;
+        }
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+        }
+    }
+
+    canvas {
+        display: block;
+        vertical-align: bottom;
+    }
+
+    #particles-2-js,
+    #particles-3-js,
+    #particles-4-js,
+    #particles-5-js {
+        z-index: -1;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+
+
+    <!-- First Parallax Image with Logo Text -->
+    <div id="gif">
+        <img src="./loader-128x/Preloader_3.gif" alt="">
+    </div>
+    <div id="body">
+        <div id='navbar'>
+            Hello, I'm <span style="color: palevioletred;">Tejas Patil</span>
+            <a href="" class="Typewrite" data-period="2000" data-type='[ "Welcome to my Website", "I ❤️ to Code.", "I ❤️ to Solve.", "I ❤️ to Develop." ]'>
+        
+        </div>
+        <div id="particles-js"></div>
+        <div style="margin-bottom: 5%;" id="home">
+            <div class="bg">
+                <div class="center large_rajat">
+                    Hello, I'm <span style="color: palevioletred;">Tejas Patil</span><br>
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to my Website", "I ❤️ to Code.", "I ❤️ to Solve.", "I ❤️ to Develop." ]'>
+                </div>
+   
+                <div class="center button" style="margin: 5%;"><a class="button_text"
+                        style="text-decoration: none; font-size: 15px ;" href="#res">Take me There</a></div>
+            </div>
+            <br>
+            <div class="center image">
+                <img src="myAvatar.png"
+                    style="border-radius: 50% !important; box-shadow: 5px 5px black;position: relative;z-index:6"
+                    width="50%" alt="">
+            </div>
+        </div>
+        <div id="res" class="center">
+            <a class="resume" href="./Tejas_Patil_Resume.pdf" style="color: grey !important;" download="resume.pdf">
+                <span>
+                    <i class="fa fa-download" style="font-size: 60px;"></i>
+                </span></a>
+            <a class="resume" href="./Tejas_Patil_Resume.pdf" style="color: grey !important;" download="resume.pdf">Download Resume</a>
+        </div>
+        <!-- Container (About Section) -->
+        <div id="about">
+            <div id="about_me">
+                <h3 class="center">ABOUT ME</h3>
+            <p class="center"><em>I love Coding</em></p>
+            <div class="center">
+                <h5>10<sup>th</sup> Class</h5>
+                <p style="color: darkgrey;">Air India Modern School,Kalina, Mumbai</p>
+                <p style="color: darkgrey;">Board : SSC</p>
+                <p style="color: darkgrey;">Percentage : 81.20%</p>
+            </div>
+            <div class="center">
+                <h5>Diploma in Computer Science</h5>
+                <p style="color: darkgrey;">Vidyalankar Polytechnic, Wadala, Mumbai</p>
+                <p style="color: darkgrey;">Board : MSBTE</p>
+                <p style="color: darkgrey;">Percentage : 78.12%</p>
+            </div>
+            <div class="center">
+                <h5>Bachelor in Engineering</h5>
+                <p style="color: darkgrey;">Watumull Institute Of Electronic Engineering And Computer Technology</p>
+                <p style="color: darkgrey;">University : Mumbai University</p>
+                <p style="color: darkgrey;">CGPA : 7.7</p>
+            </div>
+            </div>
+            <div id="particles-2-js"></div>
+            <div class="row">
+
+
+                <!-- Hide this text on small devices -->
+
+                <p class="center padding">Welcome to my website. I am passionate about my work. Because I love what I
+                    do, I have a steady source of motivation that drives me to do my
+                    best. I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so I
+                    have something to strive
+                    towards. I’m not comfortable with settling, and I’m always looking for an opportunity to do better
+                    and achieve
+                    greatness. I’m a people person. I love meeting new people and learning about their lives and their
+                    backgrounds.</p>
+
+            </div>
+            <div id="skills">
+                <p class="center skills">SKILLS</p>
+            <p class="center">JavaScript</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 85%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">85%</div>
+            </div>
+            <p class="center">React JS</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 80%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">80%</div>
+            </div>
+            <p class="center"><i class="fa fa-node-js"></i>NodeJS</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 80%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">80%</div>
+            </div>
+            <p class="center">MongoDB</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 75%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">75%</div>
+            </div>
+            <p class="center">HTML, CSS</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" id="html_css" role="progressbar" style="width: 85%; " aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">85%</div>
+            </div>
+            <p class="center">ExpressJS</p>
+            <div class="progress" style="margin: 4% 15%;">
+                <div class="progress-bar" role="progressbar" style="width: 80%; " aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">80%</div>
+            </div>
+            </div>
+        </div>
+        <div>
+            <div id="particles-3-js"></div>
+            <div id="traning">
+                <p class="center skills">TRAININGS</p>
+            <ul style="margin-left: 5%; margin-top:5%">
+                <li>Pepcoding</li>
+                <p> May 2020 </p>
+                <ul>
+                    <li>
+                        Training under the Web Development team to gain knowledge about Web Development.
+                    </li>
+                    <li>
+                        Build projects using HTML , CSS , JavaScript , React.
+                    </li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+
+        <div id="internships">
+            <p class="center skills">Work Experience</p>
+            <ul style="margin-left: 5%; margin-top:5%">
+                <li>ACCENTURE</li>
+                <p> Dec 2022 - Present </p>
+                <ul>
+                    <li>
+                        Working as a MERN Stack Developer.
+                    </li>
+                    
+                    <li>
+                        Pioneered the development of modern and responsive web applications with a primary focus on JavaScript, React.js, and other leading frontend technologies.                    </li>
+                    <li>
+                        Collaborated closely with cross-functional teams, including UX/UI designers and backend developers, to ensure seamless integration of React components.                    </li>
+                    <li>
+                        Spearheaded the implementation of innovative features and interactive elements to enhance user experiences.
+                    </li>
+                    <li>
+                        Demonstrated proficiency in JavaScript, HTML, and CSS, along with expertise in creating scalable and maintainable code across both frontend (React.js) and backend (Node.js).
+                    </li>
+                    <li>
+                        Applied best practices in version control using Git, ensuring a streamlined and efficient development process across the full stack.</li>
+
+                </ul>
+            </ul>
+            <ul style="margin-left: 5%; margin-top:5%">
+                <li>PEPCODING</li>
+                <p> Feb 2021 - Jan 2022 | Delhi, India</p>
+                <ul>
+                    <li>
+                        Worked as a Business Analyst at Crmnext, gaining insights into Customer relationship management.                    
+                        <li>
+                            Worked on company product of Customer relationship management. 
+                        </li>                </ul>
+            </ul>
+            <ul style="margin-left: 5%; margin-top:5%">
+                <li> CRMNEXT </li>
+                <p> Dec 2019 - Sept 2019 | Delhi, India</p>
+                <ul>
+                    <li>
+                            Worked as REPRESENTATIVE OPERATIONS
+                    </li>
+                    <li>
+                            Cleaning and Sorting Customer Data in Excel and handing it over to the IT Department for loading into the Dialer.
+                    </li>
+                    
+                </ul>
+            </ul>
+        </div>
+        <div>
+            <br>
+            <div id="particles-4-js"></div>
+            <div id="projects">
+                <p class="center skills">PROJECTS</p>
+            <ul style="margin-left: 5%; margin-top:5%">
+                <li>INSTAGRAM CLONE</li>
+                <ul>
+                    <li>Attempted to clone famous Instagram by Facebook.</li>
+                    <li>Made using MERN Stack. Used materialize-css for styling in React framework.</li>
+                    <li>Used Cloudinary for storing images on cloud. Deployed on Heroku server.</li>
+                    <li><a class="links" href="https://github.com/Tejas2410/InstaG_F1" target="blank">Github Link</a></li>
+                </ul>
+                <br>
+            	<!-- <li>ZOOM CLONE</li>
+                <ul>
+                    <li>Clone to some extent of video calling apps like Google Meets, Zoom.</li>
+                    <li>Used UUID, ExpressJS, EJS, Socket.IO and PeerJS forrealtime communication.</li>
+                    <li>Integrated Chat option as well.</li>
+                    <li><a class="links" href="https://frozen-tundra-08241.herokuapp.com/" target="blank">Click to open</a></li>
+                </ul>
+                <br> -->
+                <li>RESTARAUNT WEB APPLICATION</li>
+                <ul>
+                    <li>Attempt to create a food web app where consumers can select their desired
+                        subscription plans with the facility of login and payment.</li>
+                    <li> Comprise of both front-end as well as back-end componnts including HTML, CSS, JS, Express,
+                        Node, MongoDB.
+                    </li>
+                    <li><a class="links" href="https://github.com/Tejas2410/Foodapp" target="blank">Github Link</a></li>
+                </ul>
+                <br>
+                <li>WHITE BOARD</li>
+                <ul>
+                    <li>Made using HTML, CSS, JavaScript and Canvas.</li>
+                    <li>It gives the option to write and erase the text on the board. </li>
+                    <li><a class="links" href="https://github.com/Tejas2410/WB" target="blank">Github Link</a></li>
+                </ul>
+                <br>
+                
+                    <li>Excel Clone</li>
+                    <ul>
+                    <li>A desktop Spreadsheet application using Electron which does the basics tasks like save, load, and open file.</li>
+                    <li>Used Jquery, Html and CSS for UI and adding functionalities to our app. </li>
+                    <li>. Used Graph Data Structure to implement excel Formula </li>
+                    <li><a class="links" href="https://github.com/Tejas2410/ExL_C" target="blank">Github Link</a></li>
+                </ul>
+                <br>
+                <!-- <li>MOVIE APP</li>
+                <ul>
+                    <li>Made using ReactJS</li>
+                    <li>Lists the movies on basis of differnt genres. User can like or dislike a movie and also can
+                        remove
+                        it from the list statically. </li>
+                    <li><a class="links" href="https://rajk1121.github.io/React-Movie-App/" target="blank">Click to open. After
+                            clicking,
+                            click on Navbar on the page</a></li>
+                </ul>
+                <br>
+                <li>COMMAND LINE INTERFACE</li>
+                <ul>
+                    <li>Made using NodeJS, chalk, figlet.</li>
+                    <li>It gives functionalities of various commands like creating a file, removing a file, listing the
+                        current directory etc. </li>
+                </ul>
+                <br>
+                <li>Task Manager (Command Line)</li>
+                <ul>
+                    <li>Made using NodeJS CLI.</li>
+                    <li>It gives the option add a task and to remove a task. </li>
+                </ul>
+                <br> -->
+
+            </ul>
+            </div>
+        </div>
+        <!-- <div id="particles-5-js"></div>
+        <br>
+        <br>
+        <div>
+            <div id="por">
+                <p class="center skills">POSITIONS OF RESPONSIBILITY</p>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>MENTOR, LEAN IN MSIT</li>
+                    <ul>
+                        <li> February 2020 | Delhi, India</li>
+                        <li> Web Development Mentor</li>
+                    </ul>
+                </ul>
+            </div>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>MENTOR</li>
+                    <ul>
+                        <li> February 2020 | Delhi, India</li>
+                        <li> In Toyota Hackathon "Code For Safer India" 2020</li>
+                    </ul>
+                </ul>
+            </div>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>EVENT CO-ORDINATOR</li>
+                    <ul>
+                        <li> January 2018 | Delhi, India</li>
+                        <li> In Avensis, MSIT Technical Fest 2018</li>
+                    </ul>
+                </ul>
+            </div>
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>AARAMBH</li>
+                    <ul>
+                        <li> 2018 | Delhi, India</li>
+                        <li> College Drama Society</li>
+                    </ul>
+                </ul>
+            </div> 
+            <div>
+                <ul style="margin-left: 5%; margin-top:5%">
+                    <li>VOLUNTEER</li>
+                    <ul>
+                        <li> February 2020 | Delhi, India</li>
+                        <li> At International Conference for Artificial Intelligence and Applications (ICAIA’20)</li>
+                    </ul>
+                </ul>
+            </div>
+            <div>
+            </div>
+            </div> -->
+             <!-- Second Parallax Image with Portfolio Text  -->
+
+
+
+            <!-- Modal for full size images on click-->
+
+
+            <!-- Third Parallax Image with Portfolio Text -->
+
+
+            <!-- Container (Contact Section) -->
+
+
+            <!-- Footer -->
+            <footer>
+                <div class="d-flex medium">
+
+                    <div class="d-md-flex flex-fill centerf">
+                        <p>"It does not matter how slowly you go, so long as you do not stop" <br>
+                            – Confucius</p>
+                    </div>
+
+                    <div class="d-md-flex flex-fill centerf">
+                        <a class="footerIcon" href="https://github.com/Tejas2410">
+                            <span>
+                                <i class="fa fa-github-square" style="font-size:60px;"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.linkedin.com/in/tejas-patil-6b2141148/">
+                            <span>
+                                <i class="fa fa-linkedin-square" style="font-size:60px;"></i>
+                            </span>
+                        </a>
+                        <!-- <a class="footerIcon" href="www.facebook.com">
+                            <span>
+                                <i class="fa fa-facebook-square" style="font-size:60px;"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.instagram.com/rajk1121/">
+                            <span>
+                                <i class="fa fa-instagram" style="font-size:60px;"></i>
+                            </span>
+                        </a> -->
+                    </div>
+
+                </div>
+                <div class="small">
+                    <div class="centerf">
+                        <p>"It does not matter how slowly you go, so long as you do not stop." <br>
+                            – Confucius</p>
+                    </div>
+                    <div class="centerf">
+                        <a class="footerIcon" href="https://github.com/Tejas2410">
+                            <span>
+                                <i class="fa fa-github-square"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.linkedin.com/in/tejas-patil-6b2141148/">
+                            <span>
+                                <i class="fa fa-linkedin-square"></i>
+                            </span>
+                        </a>
+                        <!-- <a class="footerIcon" href="https://www.facebook.com">
+                            <span>
+                                <i class="fa fa-facebook-square"></i>
+                            </span>
+                        </a>
+                        <a class="footerIcon" href="https://www.instagram.com/rajk1121/">
+                            <span>
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="center"> Made with <i class="fa fa-heart" style="color: red;"></i> by <span
+                        style="color: palevioletred;"> Tejas Patil</span>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+            // ParticlesJS Config.
+            $(document).ready(function () {
+
+                setTimeout(function () {
+                    document.getElementById('gif').style.display = 'none';
+                    document.getElementById('body').style.display = 'block';
+                    particlesJS("particles-js", {
+                        "particles": {
+                            "number": {
+                                "value": 80,
+                                "density": {
+                                    "enable": true,
+                                    "value_area": 700
+                                }
+                            },
+                            "color": {
+                                "value": "#ffffff"
+                            },
+                            "shape": {
+                                "type": "circle",
+                                "stroke": {
+                                    "width": 0,
+                                    "color": "#000000"
+                                },
+                                "polygon": {
+                                    "nb_sides": 5
+                                },
+                            },
+                            "opacity": {
+                                "value": 0.5,
+                                "random": false,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 0.1,
+                                    "opacity_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 10,
+                                    "size_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": "#ffffff",
+                                "opacity": 0.4,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 2,
+                                "direction": "none",
+                                "random": false,
+                                "straight": false,
+                                "out_mode": "out",
+                                "bounce": false,
+                                "attract": {
+                                    "enable": false,
+                                    "rotateX": 600,
+                                    "rotateY": 1200
+                                }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "grab"
+                                },
+                                "onclick": {
+                                    "enable": true,
+                                    "mode": "push"
+                                },
+                                "resize": true
+                            },
+                            "modes": {
+                                "grab": {
+                                    "distance": 140,
+                                    "line_linked": {
+                                        "opacity": 1
+                                    }
+                                },
+                                "bubble": {
+                                    "distance": 400,
+                                    "size": 40,
+                                    "duration": 2,
+                                    "opacity": 8,
+                                    "speed": 3
+                                },
+                                "repulse": {
+                                    "distance": 200,
+                                    "duration": 0.4
+                                },
+                                "push": {
+                                    "particles_nb": 4
+                                },
+                                "remove": {
+                                    "particles_nb": 2
+                                }
+                            }
+                        },
+                        "retina_detect": true
+                    }
+                    );
+                    particlesJS("particles-2-js", {
+                        "particles": {
+                            "number": {
+                                "value": 80,
+                                "density": {
+                                    "enable": true,
+                                    "value_area": 700
+                                }
+                            },
+                            "color": {
+                                "value": "#ffffff"
+                            },
+                            "shape": {
+                                "type": "circle",
+                                "stroke": {
+                                    "width": 0,
+                                    "color": "#000000"
+                                },
+                                "polygon": {
+                                    "nb_sides": 5
+                                },
+                            },
+                            "opacity": {
+                                "value": 0.5,
+                                "random": false,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 0.1,
+                                    "opacity_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 10,
+                                    "size_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": "#ffffff",
+                                "opacity": 0.4,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 2,
+                                "direction": "none",
+                                "random": false,
+                                "straight": false,
+                                "out_mode": "out",
+                                "bounce": false,
+                                "attract": {
+                                    "enable": false,
+                                    "rotateX": 600,
+                                    "rotateY": 1200
+                                }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "grab"
+                                },
+                                "onclick": {
+                                    "enable": true,
+                                    "mode": "push"
+                                },
+                                "resize": true
+                            },
+                            "modes": {
+                                "grab": {
+                                    "distance": 140,
+                                    "line_linked": {
+                                        "opacity": 1
+                                    }
+                                },
+                                "bubble": {
+                                    "distance": 400,
+                                    "size": 40,
+                                    "duration": 2,
+                                    "opacity": 8,
+                                    "speed": 3
+                                },
+                                "repulse": {
+                                    "distance": 200,
+                                    "duration": 0.4
+                                },
+                                "push": {
+                                    "particles_nb": 4
+                                },
+                                "remove": {
+                                    "particles_nb": 2
+                                }
+                            }
+                        },
+                        "retina_detect": true
+                    }
+                    );
+                    particlesJS("particles-3-js", {
+                        "particles": {
+                            "number": {
+                                "value": 80,
+                                "density": {
+                                    "enable": true,
+                                    "value_area": 700
+                                }
+                            },
+                            "color": {
+                                "value": "#ffffff"
+                            },
+                            "shape": {
+                                "type": "circle",
+                                "stroke": {
+                                    "width": 0,
+                                    "color": "#000000"
+                                },
+                                "polygon": {
+                                    "nb_sides": 5
+                                },
+                            },
+                            "opacity": {
+                                "value": 0.5,
+                                "random": false,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 0.1,
+                                    "opacity_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 10,
+                                    "size_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": "#ffffff",
+                                "opacity": 0.4,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 2,
+                                "direction": "none",
+                                "random": false,
+                                "straight": false,
+                                "out_mode": "out",
+                                "bounce": false,
+                                "attract": {
+                                    "enable": false,
+                                    "rotateX": 600,
+                                    "rotateY": 1200
+                                }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "grab"
+                                },
+                                "onclick": {
+                                    "enable": true,
+                                    "mode": "push"
+                                },
+                                "resize": true
+                            },
+                            "modes": {
+                                "grab": {
+                                    "distance": 140,
+                                    "line_linked": {
+                                        "opacity": 1
+                                    }
+                                },
+                                "bubble": {
+                                    "distance": 400,
+                                    "size": 40,
+                                    "duration": 2,
+                                    "opacity": 8,
+                                    "speed": 3
+                                },
+                                "repulse": {
+                                    "distance": 200,
+                                    "duration": 0.4
+                                },
+                                "push": {
+                                    "particles_nb": 4
+                                },
+                                "remove": {
+                                    "particles_nb": 2
+                                }
+                            }
+                        },
+                        "retina_detect": true
+                    }
+                    );
+                    particlesJS("particles-4-js", {
+                        "particles": {
+                            "number": {
+                                "value": 80,
+                                "density": {
+                                    "enable": true,
+                                    "value_area": 700
+                                }
+                            },
+                            "color": {
+                                "value": "#ffffff"
+                            },
+                            "shape": {
+                                "type": "circle",
+                                "stroke": {
+                                    "width": 0,
+                                    "color": "#000000"
+                                },
+                                "polygon": {
+                                    "nb_sides": 5
+                                },
+                            },
+                            "opacity": {
+                                "value": 0.5,
+                                "random": false,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 0.1,
+                                    "opacity_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 10,
+                                    "size_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": "#ffffff",
+                                "opacity": 0.4,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 2,
+                                "direction": "none",
+                                "random": false,
+                                "straight": false,
+                                "out_mode": "out",
+                                "bounce": false,
+                                "attract": {
+                                    "enable": false,
+                                    "rotateX": 600,
+                                    "rotateY": 1200
+                                }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "grab"
+                                },
+                                "onclick": {
+                                    "enable": true,
+                                    "mode": "push"
+                                },
+                                "resize": true
+                            },
+                            "modes": {
+                                "grab": {
+                                    "distance": 140,
+                                    "line_linked": {
+                                        "opacity": 1
+                                    }
+                                },
+                                "bubble": {
+                                    "distance": 400,
+                                    "size": 40,
+                                    "duration": 2,
+                                    "opacity": 8,
+                                    "speed": 3
+                                },
+                                "repulse": {
+                                    "distance": 200,
+                                    "duration": 0.4
+                                },
+                                "push": {
+                                    "particles_nb": 4
+                                },
+                                "remove": {
+                                    "particles_nb": 2
+                                }
+                            }
+                        },
+                        "retina_detect": true
+                    }
+                    );
+                    particlesJS("particles-5-js", {
+                        "particles": {
+                            "number": {
+                                "value": 80,
+                                "density": {
+                                    "enable": true,
+                                    "value_area": 700
+                                }
+                            },
+                            "color": {
+                                "value": "#ffffff"
+                            },
+                            "shape": {
+                                "type": "circle",
+                                "stroke": {
+                                    "width": 0,
+                                    "color": "#000000"
+                                },
+                                "polygon": {
+                                    "nb_sides": 5
+                                },
+                            },
+                            "opacity": {
+                                "value": 0.5,
+                                "random": false,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 0.1,
+                                    "opacity_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "size": {
+                                "value": 3,
+                                "random": true,
+                                "anim": {
+                                    "enable": false,
+                                    "speed": 10,
+                                    "size_min": 0.1,
+                                    "sync": false
+                                }
+                            },
+                            "line_linked": {
+                                "enable": true,
+                                "distance": 150,
+                                "color": "#ffffff",
+                                "opacity": 0.4,
+                                "width": 1
+                            },
+                            "move": {
+                                "enable": true,
+                                "speed": 2,
+                                "direction": "none",
+                                "random": false,
+                                "straight": false,
+                                "out_mode": "out",
+                                "bounce": false,
+                                "attract": {
+                                    "enable": false,
+                                    "rotateX": 600,
+                                    "rotateY": 1200
+                                }
+                            }
+                        },
+                        "interactivity": {
+                            "detect_on": "canvas",
+                            "events": {
+                                "onhover": {
+                                    "enable": true,
+                                    "mode": "grab"
+                                },
+                                "onclick": {
+                                    "enable": true,
+                                    "mode": "push"
+                                },
+                                "resize": true
+                            },
+                            "modes": {
+                                "grab": {
+                                    "distance": 140,
+                                    "line_linked": {
+                                        "opacity": 1
+                                    }
+                                },
+                                "bubble": {
+                                    "distance": 400,
+                                    "size": 40,
+                                    "duration": 2,
+                                    "opacity": 8,
+                                    "speed": 3
+                                },
+                                "repulse": {
+                                    "distance": 200,
+                                    "duration": 0.4
+                                },
+                                "push": {
+                                    "particles_nb": 4
+                                },
+                                "remove": {
+                                    "particles_nb": 2
+                                }
+                            }
+                        },
+                        "retina_detect": true
+                    }
+                    );
+
+                }, 2000);
+            });
+            let $window = $(window);
+            let about_me = $('#about_me')
+            let skills = $('#skills')
+            let training = $('#traning')
+            let internships = $('#internships')
+            let projects = $('#projects')
+            let por = $('#por')
+            let large_rajat = $('.large_rajat')
+            let navbar = $('#navbar')
+            function isScrolledIntoView(elem, $window) {
+                var docViewTop = $window.scrollTop();
+                // console.log(docViewTop);
+                var docViewBottom = docViewTop + $window.height();
+
+                var elemTop = elem.offset().top;
+                var elemBottom = elemTop + elem.height();
+                // console.log(elemTop, elemBottom, docViewTop, docViewBottom)
+                return (elemTop <= docViewBottom);
+            }
+            $(document).on('scroll',()=>{
+                if(large_rajat.offset().top+large_rajat.height()<=$window.scrollTop()){
+                    if(navbar.hasClass('animate__animated animate__fadeOut'))
+                        navbar.removeClass('animate__animated animate__fadeOut')
+                    navbar.addClass('animate__animated animate__fadeIn')
+                }else{
+                    if(navbar.hasClass("animate__animated animate__fadeIn")){
+                            navbar.removeClass('animate__animated animate__fadeIn')
+                        navbar.addClass('animate__animated animate__fadeOut')
+                    }
+                }
+                 if (isScrolledIntoView(about_me, $window)) {
+                    about_me.addClass("animate__animated animate__fadeIn")
+                }
+                if (isScrolledIntoView(skills, $window)) {
+                    skills.addClass("animate__animated animate__bounceIn")
+                }
+                if (isScrolledIntoView(training, $window)) {
+                    training.addClass("animate__animated animate__fadeIn")
+                }
+                if (isScrolledIntoView(internships, $window)) {
+                    internships.addClass("animate__animated animate__fadeInUp")
+                }
+                
+                if (isScrolledIntoView(projects, $window)) {
+                    projects.addClass("animate__animated animate__fadeIn")
+                }
+                if (isScrolledIntoView(por, $window)) {
+                    por.addClass("animate__animated animate__bounceIn")
+                }
+
+            })
+
+	var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+            var toRotate = elements[0].getAttribute('data-type');
+            var period = elements[0].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[0], JSON.parse(toRotate), period);
+            }
+            var elements = document.getElementsByClassName('Typewrite');
+            var toRotate = elements[0].getAttribute('data-type');
+            var period = elements[0].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[0], JSON.parse(toRotate), period);
+            }
+        // INJECT CSS
+        // var css = document.createElement("style");
+        // css.type = "text/css";
+        // css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        // document.body.appendChild(css);
+    };
+        </script>
+
+</body>
+
+</html>
